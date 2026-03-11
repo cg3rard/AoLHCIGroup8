@@ -1,0 +1,39 @@
+<nav class="navbar">
+  <div class="container nav-container">
+    <a href="/" class="logo">
+      <img src="/frontend/assets/icons/icons.png" class="logo-img" />
+
+      <span class="logo-text">LimbahKu</span>
+    </a>
+
+    <div class="menu">
+      <a href="/" class="nav-link">Home</a>
+
+      <a href="/about" class="nav-link">About</a>
+
+      <a href="/contact" class="nav-link">Contact</a>
+    </div>
+
+    <div class="auth">
+      <a href="/login" class="btn-outline2">Login</a>
+
+      <a href="/register" class="btn-outline">Register</a>
+    </div>
+  </div>
+</nav>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<script>
+  lucide.createIcons();
+
+  const links = document.querySelectorAll(".nav-link");
+
+  const path = window.location.pathname;
+
+  links.forEach((link) => {
+    if (link.getAttribute("href") == path) {
+      link.classList.add("active");
+    }
+  });
+</script>

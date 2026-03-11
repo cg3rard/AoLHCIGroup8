@@ -1,0 +1,121 @@
+.footer {
+  background: #5b633d;
+
+  padding: 10px 15px;
+
+  text-align: center;
+
+  color: #f5f6f2;
+}
+
+.footer-container {
+  max-width: 900px;
+
+  margin: auto;
+}
+
+.footer-brand {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 7px;
+}
+
+.footer-brand svg {
+  width: 28px;
+
+  height: 28px;
+
+  color: #e8e6d9;
+}
+
+.footer-brand h2 {
+  font-size: 26px;
+
+  font-weight: 600;
+
+  letter-spacing: 1px;
+}
+
+.footer-description {
+  font-size: 18px;
+
+  line-height: 1.8;
+
+  max-width: 750px;
+
+  margin: 7px auto 7px auto;
+
+  color: #e4e7dc;
+}
+
+.footer-line {
+  border: none;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+
+  margin: 20px auto;
+
+  width: 80%;
+}
+
+.footer-bottom {
+  font-size: 15px;
+
+  opacity: 0.9;
+}
+
+.footer-logo-img {
+  /* PR: BUAT LOGO JADI BAGUS, SOALNY MSIH BURIK BJIR */
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+  mix-blend-mode: multiply;
+}
+
+.cta {
+  background: #6a7045;
+  padding: 50px;
+  border-radius: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.btn-primary {
+  background: linear-gradient(
+    135deg,
+    #ff9fe8 0%,
+    #ffb6ec 40%,
+    #ffd6f5 70%,
+    #ffffff 100%
+  );
+
+  padding: 14px 34px;
+
+  border-radius: 10px;
+
+  font-size: 17px;
+
+  font-weight: 600;
+
+  color: #3a0033;
+
+  border: none;
+
+  transition: all 0.25s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px) scale(1.03);
+
+  background: linear-gradient(135deg, #ff7fe2, #ff9fe8, #ffc9f1);
+
+  box-shadow: 0 10px 25px rgba(255, 105, 210, 0.35);
+}

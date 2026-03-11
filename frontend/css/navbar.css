@@ -1,0 +1,144 @@
+.navbar {
+  background: linear-gradient(
+    90deg,
+    #e8e6d9 0%,
+    #e1ead3 40%,
+    #d5e5be 70%,
+    #c7dba8 100%
+  );
+
+  padding: 18px 0;
+
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.nav-container {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  font-weight: 700;
+
+  font-size: 20px;
+
+  color: #3f4a1f;
+}
+
+.logo svg {
+  width: 22px;
+
+  height: 22px;
+
+  color: #6c8f3a;
+}
+
+.menu {
+  display: flex;
+
+  gap: 40px;
+}
+
+.nav-link {
+  padding: 10px 18px;
+
+  border-radius: 8px;
+
+  color: #2f3515;
+
+  font-weight: 500;
+
+  transition: all 0.25s;
+}
+
+.nav-link:hover {
+  background: #779252;
+
+  color: #3f4a1f;
+
+  transform: translateY(-1px);
+}
+
+.nav-link.active {
+  border: 2px solid #a9c67a;
+
+  background: #e7f1d8;
+
+  color: #3c4b1f;
+}
+
+.auth {
+  display: flex;
+
+  gap: 50px;
+
+  align-items: center;
+}
+
+/* REGISTER BUTTON */
+
+.btn-outline {
+  border: 2px solid #7fa445;
+
+  padding: 6px 16px;
+
+  border-radius: 8px;
+
+  font-weight: 600;
+
+  color: #3f4a1f;
+
+  background: #eaf3db;
+
+  transition: all 0.25s;
+}
+
+.btn-outline:hover {
+  background: #cfe3b3;
+
+  border-color: #6c8f3a;
+}
+
+/* LOGIN UHUIII */
+.btn-outline2 {
+  padding: 6px 16px;
+
+  border-radius: 8px;
+
+  font-weight: 600;
+
+  color: #1b2206;
+  transition: all 0.25s;
+}
+
+.btn-outline2:hover {
+  background: #8fa36f;
+
+  border-color: #42680c;
+}
+
+.logo-img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+  color: #3f4a23;
+}
