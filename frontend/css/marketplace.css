@@ -1,0 +1,145 @@
+.marketplace {
+  max-width: 1000px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+  background: #f9f9f9;
+  transition: transform 0.2s;
+}
+.product-card:hover {
+  transform: scale(1.03);
+}
+.product-card img {
+  max-width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+.product-title {
+  font-weight: 600;
+  margin: 8px 0 4px;
+}
+.product-price {
+  color: #2c7a7b;
+  font-weight: bold;
+}
+
+/* Marketplace Page Background */
+.marketplace-page {
+  background:
+    radial-gradient(circle at 20% 20%, rgba(200,235,200,0.35) 0%, transparent 45%),
+    radial-gradient(circle at 80% 80%, rgba(160,220,170,0.35) 0%, transparent 45%),
+    linear-gradient(
+      180deg,
+      #f6fbf4 0%,
+      #e8f5e9 35%,
+      #d8efdc 70%,
+      #cce6d2 100%
+    );
+  min-height: calc(100vh - 200px);
+}
+
+/* Search Box Styles */
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+  gap: 10px;
+}
+
+.search-box {
+  width: 100%;
+  max-width: 450px;
+  padding: 15px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 30px;
+  background: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.search-box::placeholder {
+  color: #888;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.search-box:focus {
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Wishlist Button */
+.wishlist-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 50%;
+  background: #52B788;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.wishlist-btn:hover {
+  background: #40916C;
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Become Seller Section */
+.become-seller-section {
+  background: linear-gradient(135deg, #1B4332 0%, #2D6A4F 100%);
+  padding: 60px 20px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.become-seller-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.become-seller-content h2 {
+  color: #ffffff;
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.become-seller-content p {
+  color: #D8F3DC;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.btn-seller {
+  display: inline-block;
+  padding: 14px 35px;
+  background: #52B788;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-seller:hover {
+  background: #40916C;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+

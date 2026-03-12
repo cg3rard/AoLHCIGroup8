@@ -73,6 +73,15 @@ app.get("/register", (req, res) => {
   res.sendFile(path.join(__dirname, "../frontend/pages/register.html"));
 });
 
+app.get("/marketplace", (req, res) => {
+  res.sendFile(path.join(__dirname, "../frontend/pages/marketplace.html"));
+});
+
+app.get("/seller", (req, res) => {
+  res.sendFile(path.join(__dirname, "../frontend/pages/seller.html"));
+});
+
+
 // app.get("/api/products", (req, res) => {
 //   const products = JSON.parse(fs.readFileSync("products.json"));
 
@@ -103,6 +112,6 @@ app.get("/frontend/assets/icons/icons.png", (req, res) => {
 //   res.json(product);
 // });
 
-app.listen(80, () => {
-  console.log("Server running on port 80");
+app.listen(3000, () => {
+  console.log("Server running on http://localhost:3000");
 });

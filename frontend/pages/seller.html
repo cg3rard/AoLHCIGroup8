@@ -1,1 +1,274 @@
-Comming Soon
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Seller — LimbahKu</title>
+    <link rel="icon" type="image/png" href="/assets/icons/icons.png" />
+    <link rel="stylesheet" href="/css/base.css" />
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link rel="stylesheet" href="/css/layout.css" />
+    <link rel="stylesheet" href="/css/components.css" />
+    <link rel="stylesheet" href="/css/seller.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital@1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="seller-page">
+    <div id="header"></div>
+
+    <main class="seller-dashboard">
+      <!-- Header Section -->
+      <div class="seller-header">
+        <div class="seller-info">
+          <div class="seller-avatar">
+            <span>SL</span>
+          </div>
+          <div class="seller-details">
+            <h1>Dashboard Seller</h1>
+            <p>Selamat datang kembali! Kelola produk limbah Anda di sini</p>
+          </div>
+        </div>
+        <button class="btn-add-product" onclick="openModal()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+          Tambah Produk
+        </button>
+      </div>
+
+      <!-- Stats Section -->
+      <div class="seller-stats">
+        <div class="stat-card">
+          <div class="stat-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+          </div>
+          <div class="stat-content">
+            <span class="stat-number">12</span>
+            <span class="stat-label">Total Produk</span>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon-wrapper views">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+          </div>
+          <div class="stat-content">
+            <span class="stat-number">1.284</span>
+            <span class="stat-label">Total Views</span>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon-wrapper sales">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+          </div>
+          <div class="stat-content">
+            <span class="stat-number">Rp 2.450.000</span>
+            <span class="stat-label">Total Penjualan</span>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon-wrapper orders">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+          </div>
+          <div class="stat-content">
+            <span class="stat-number">28</span>
+            <span class="stat-label">Pesanan</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Actions -->
+      <div class="seller-actions">
+        <div class="action-card">
+          <div class="action-icon add">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+          </div>
+          <h3>Tambah Produk</h3>
+          <p>Tambahkan produk limbah baru untuk dijual</p>
+          <button class="btn-action" onclick="openModal()">Tambah Sekarang</button>
+        </div>
+        <div class="action-card">
+          <div class="action-icon manage">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+          </div>
+          <h3>Kelola Produk</h3>
+          <p>Lihat dan edit produk yang sudah ada</p>
+          <button class="btn-action" onclick="scrollToProducts()">Lihat Produk</button>
+        </div>
+        <div class="action-card">
+          <div class="action-icon stats">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+          </div>
+          <h3>Statistik</h3>
+          <p>Lihat performa penjualan Anda</p>
+          <button class="btn-action">Lihat Stats</button>
+        </div>
+      </div>
+
+      <!-- Products Section -->
+      <div class="seller-products" id="products-section">
+        <div class="products-header">
+          <h2>Produk Saya</h2>
+          <div class="products-filter">
+            <button class="filter-btn active">Semua</button>
+            <button class="filter-btn">Aktif</button>
+            <button class="filter-btn">Terjual</button>
+          </div>
+        </div>
+
+        <!-- Sample Products Grid -->
+        <div class="products-grid">
+          <div class="product-card">
+            <div class="product-image">
+              <img src="/frontend/assets/dummy/dummy1.jpg" alt="Produk">
+              <span class="product-badge aktif">Aktif</span>
+            </div>
+            <div class="product-info">
+              <h3>Plastik Daur Ulang Grade A</h3>
+              <p class="product-category">Plastik</p>
+              <div class="product-meta">
+                <span class="product-price">Rp 150.000/kg</span>
+                <span class="product-stock">50 kg</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn-edit">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+                  Edit
+                </button>
+                <button class="btn-delete">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+                  Hapus
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="/frontend/assets/dummy/dummy2.jpg" alt="Produk">
+              <span class="product-badge aktif">Aktif</span>
+            </div>
+            <div class="product-info">
+              <h3>Kertas Bekas Lokal</h3>
+              <p class="product-category">Kertas</p>
+              <div class="product-meta">
+                <span class="product-price">Rp 5.000/kg</span>
+                <span class="product-stock">200 kg</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn-edit">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+                  Edit
+                </button>
+                <button class="btn-delete">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+                  Hapus
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">
+              <img src="/frontend/assets/dummy/dummy3.jpeg" alt="Produk">
+              <span class="product-badge terjual">Terjual</span>
+            </div>
+            <div class="product-info">
+              <h3>Logam Bekas Fe</h3>
+              <p class="product-category">Logam</p>
+              <div class="product-meta">
+                <span class="product-price">Rp 25.000/kg</span>
+                <span class="product-stock">0 kg</span>
+              </div>
+              <div class="product-actions">
+                <button class="btn-edit">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+                  Edit
+                </button>
+                <button class="btn-delete">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+                  Hapus
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Modal Tambah Produk -->
+    <div class="modal-overlay" id="productModal">
+      <div class="modal-container">
+        <div class="modal-header">
+          <h2>Tambah Produk Baru</h2>
+          <button class="modal-close" onclick="closeModal()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </button>
+        </div>
+        <form class="modal-form" onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <label for="productName">Nama Produk</label>
+            <input type="text" id="productName" placeholder="Contoh: Plastik Daur Ulang Grade A" required>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="productCategory">Kategori</label>
+              <select id="productCategory" required>
+                <option value="">Pilih Kategori</option>
+                <option value="plastik">Plastik</option>
+                <option value="kertas">Kertas</option>
+                <option value="logam">Logam</option>
+                <option value="kaca">Kaca</option>
+                <option value="elektronik">Elektronik</option>
+                <option value="lainnya">Lainnya</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="productPrice">Harga (Rp)</label>
+              <input type="number" id="productPrice" placeholder="150000" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="productStock">Stok (kg)</label>
+              <input type="number" id="productStock" placeholder="100" required>
+            </div>
+            <div class="form-group">
+              <label for="productUnit">Satuan</label>
+              <select id="productUnit" required>
+                <option value="kg">kg</option>
+                <option value="pcs">pcs</option>
+                <option value="ton">ton</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="productDescription">Deskripsi Produk</label>
+            <textarea id="productDescription" rows="3" placeholder="Jelaskan detail produk..."></textarea>
+          </div>
+          <div class="form-group">
+            <label for="productImage">Foto Produk</label>
+            <div class="file-upload">
+              <input type="file" id="productImage" accept="image/*">
+              <div class="file-upload-content">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+                <p>Klik untuk upload atau drag & drop</p>
+                <span>PNG, JPG hingga 5MB</span>
+              </div>
+            </div>
+          </div>
+          <div class="modal-actions">
+            <button type="button" class="btn-cancel" onclick="closeModal()">Batal</button>
+            <button type="submit" class="btn-submit">Simpan Produk</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="footer"></div>
+
+    <script src="/js/loadComponents.js"></script>
+    <script src="/js/seller.js"></script>
+  </body>
+</html>
+

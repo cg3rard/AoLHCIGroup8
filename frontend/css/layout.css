@@ -377,3 +377,8 @@
   font-weight: 600;
   text-decoration: none;
 }
+
+/* ===== MAIN CONTENT ===== */
+main {
+  flex: 1;
+}
